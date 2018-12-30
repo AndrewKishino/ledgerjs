@@ -121,7 +121,7 @@ TransportStatusError.prototype = new Error();
  * it can be for instance an ID, an file path, a URL,...
  */
 export default class Transport<Descriptor> {
-  debug: ?(log: string) => void = null;
+  debug: ?(log: string) => void = global.__ledgerDebug || null;
   exchangeTimeout: number = 30000;
 
   /**
@@ -284,7 +284,7 @@ TransportFoo.create().then(transport => ...)
    */
   static create(
     openTimeout?: number = 3000,
-    listenTimeout?: number = 10000
+    listenTimeout?: number
   ): Promise<Transport<Descriptor>> {
     return new Promise((resolve, reject) => {
       let found = false;
@@ -292,15 +292,15 @@ TransportFoo.create().then(transport => ...)
         next: e => {
           found = true;
           if (sub) sub.unsubscribe();
-          clearTimeout(listenTimeoutId);
+          if (listenTimeoutId) clearTimeout(listenTimeoutId);
           this.open(e.descriptor, openTimeout).then(resolve, reject);
         },
         error: e => {
-          clearTimeout(listenTimeoutId);
+          if (listenTimeoutId) clearTimeout(listenTimeoutId);
           reject(e);
         },
         complete: () => {
-          clearTimeout(listenTimeoutId);
+          if (listenTimeoutId) clearTimeout(listenTimeoutId);
           if (!found) {
             reject(
               new TransportError(
@@ -311,12 +311,17 @@ TransportFoo.create().then(transport => ...)
           }
         }
       });
-      const listenTimeoutId = setTimeout(() => {
-        sub.unsubscribe();
-        reject(
-          new TransportError(this.ErrorMessage_ListenTimeout, "ListenTimeout")
-        );
-      }, listenTimeout);
+      const listenTimeoutId = listenTimeout
+        ? setTimeout(() => {
+            sub.unsubscribe();
+            reject(
+              new TransportError(
+                this.ErrorMessage_ListenTimeout,
+                "ListenTimeout"
+              )
+            );
+          }, listenTimeout)
+        : null;
     });
   }
 

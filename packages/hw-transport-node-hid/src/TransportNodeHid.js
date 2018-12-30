@@ -119,9 +119,15 @@ export default class TransportNodeHid extends Transport<string> {
   };
 
   /**
+   * if path="" is not provided, the library will take the first device
    */
   static async open(path: string) {
-    return Promise.resolve(new TransportNodeHid(new HID.HID(path)));
+    if (path) {
+      return Promise.resolve(new TransportNodeHid(new HID.HID(path)));
+    }
+    const device = getDevices()[0];
+    if (!device) throw new TransportError("NoDevice", "NoDevice");
+    return Promise.resolve(new TransportNodeHid(new HID.HID(device.path)));
   }
 
   exchange(apdu: Buffer): Promise<Buffer> {
@@ -229,7 +235,15 @@ export default class TransportNodeHid extends Transport<string> {
       return response;
     }
 
+    const { debug } = this;
     const deferred = defer();
+    if (debug) {
+      debug("=>" + apdu.toString("hex"));
+      deferred.promise.then(result => {
+        debug("<= " + result.toString("hex"));
+      });
+    }
+
     let exchangeTimeout;
     let transport;
     if (!this.ledgerTransport) {
@@ -254,10 +268,6 @@ export default class TransportNodeHid extends Transport<string> {
         const deferred = this.exchangeStack[0];
 
         const send = content => {
-          const { debug } = this;
-          if (debug) {
-            debug("=>" + content.toString("hex"));
-          }
           const data = [0x00];
           for (let i = 0; i < content.length; i++) {
             data.push(content[i]);
@@ -272,10 +282,6 @@ export default class TransportNodeHid extends Transport<string> {
               if (err || !res) reject(err);
               else {
                 const buffer = Buffer.from(res);
-                const { debug } = this;
-                if (debug) {
-                  debug("<=" + buffer.toString("hex"));
-                }
                 resolve(buffer);
               }
             })
