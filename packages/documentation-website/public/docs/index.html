@@ -1,0 +1,3402 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset='utf-8' />
+  <title>@ledgerhq/* 4.33.3 | Documentation</title>
+  <meta name='viewport' content='width=device-width,initial-scale=1'>
+  <link href='assets/bass.css' type='text/css' rel='stylesheet' />
+  <link href='assets/style.css' type='text/css' rel='stylesheet' />
+  <link href='assets/github.css' type='text/css' rel='stylesheet' />
+  <link href='assets/split.css' type='text/css' rel='stylesheet' />
+</head>
+<body class='documentation m0'>
+    <div class='flex'>
+      <div id='split-left' class='overflow-auto fs0 height-viewport-100'>
+        <div class='py1 px2'>
+          <h3 class='mb0 no-anchor'>@ledgerhq/*</h3>
+          <div class='mb1'><code>4.33.3</code></div>
+          <input
+            placeholder='Filter'
+            id='filter-input'
+            class='col12 block input'
+            type='text' />
+          <div id='toc'>
+            <ul class='list-reset h5 py1-ul'>
+              
+                
+                <li><a
+                  href='#transport'
+                  class=" toggle-sibling">
+                  Transport
+                  <span class='icon'>▸</span>
+                </a>
+                
+                <div class='toggle-target display-none'>
+                  
+                  <ul class='list-reset py1-ul pl1'>
+                    <li class='h5'><span>Static members</span></li>
+                    
+                      <li><a
+                        href='#transportissupported'
+                        class='regular pre-open'>
+                        .isSupported
+                      </a></li>
+                    
+                      <li><a
+                        href='#transportlist'
+                        class='regular pre-open'>
+                        .list
+                      </a></li>
+                    
+                      <li><a
+                        href='#transportlisten'
+                        class='regular pre-open'>
+                        .listen
+                      </a></li>
+                    
+                      <li><a
+                        href='#transportopen'
+                        class='regular pre-open'>
+                        .open
+                      </a></li>
+                    
+                      <li><a
+                        href='#transportcreate'
+                        class='regular pre-open'>
+                        .create
+                      </a></li>
+                    
+                    </ul>
+                  
+                  
+                    <ul class='list-reset py1-ul pl1'>
+                      <li class='h5'><span>Instance members</span></li>
+                      
+                      <li><a
+                        href='#transportexchange'
+                        class='regular pre-open'>
+                        #exchange
+                      </a></li>
+                      
+                      <li><a
+                        href='#transportsetscramblekey'
+                        class='regular pre-open'>
+                        #setScrambleKey
+                      </a></li>
+                      
+                      <li><a
+                        href='#transportclose'
+                        class='regular pre-open'>
+                        #close
+                      </a></li>
+                      
+                      <li><a
+                        href='#transporton'
+                        class='regular pre-open'>
+                        #on
+                      </a></li>
+                      
+                      <li><a
+                        href='#transportoff'
+                        class='regular pre-open'>
+                        #off
+                      </a></li>
+                      
+                      <li><a
+                        href='#transportsetdebugmode'
+                        class='regular pre-open'>
+                        #setDebugMode
+                      </a></li>
+                      
+                      <li><a
+                        href='#transportsetexchangetimeout'
+                        class='regular pre-open'>
+                        #setExchangeTimeout
+                      </a></li>
+                      
+                      <li><a
+                        href='#transportsend'
+                        class='regular pre-open'>
+                        #send
+                      </a></li>
+                      
+                    </ul>
+                  
+                  
+                  
+                </div>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#tezos'
+                  class=" toggle-sibling">
+                  Tezos
+                  <span class='icon'>▸</span>
+                </a>
+                
+                <div class='toggle-target display-none'>
+                  
+                  
+                    <ul class='list-reset py1-ul pl1'>
+                      <li class='h5'><span>Instance members</span></li>
+                      
+                      <li><a
+                        href='#tezosgetaddress'
+                        class='regular pre-open'>
+                        #getAddress
+                      </a></li>
+                      
+                    </ul>
+                  
+                  
+                  
+                </div>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#httptransport'
+                  class="">
+                  HttpTransport
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#websockettransport'
+                  class="">
+                  WebSocketTransport
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#transportnodehid'
+                  class=" toggle-sibling">
+                  TransportNodeHid
+                  <span class='icon'>▸</span>
+                </a>
+                
+                <div class='toggle-target display-none'>
+                  
+                  <ul class='list-reset py1-ul pl1'>
+                    <li class='h5'><span>Static members</span></li>
+                    
+                      <li><a
+                        href='#transportnodehidlisten'
+                        class='regular pre-open'>
+                        .listen
+                      </a></li>
+                    
+                      <li><a
+                        href='#transportnodehidopen'
+                        class='regular pre-open'>
+                        .open
+                      </a></li>
+                    
+                    </ul>
+                  
+                  
+                  
+                  
+                </div>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#transportu2f'
+                  class=" toggle-sibling">
+                  TransportU2F
+                  <span class='icon'>▸</span>
+                </a>
+                
+                <div class='toggle-target display-none'>
+                  
+                  <ul class='list-reset py1-ul pl1'>
+                    <li class='h5'><span>Static members</span></li>
+                    
+                      <li><a
+                        href='#transportu2fopen'
+                        class='regular pre-open'>
+                        .open
+                      </a></li>
+                    
+                    </ul>
+                  
+                  
+                  
+                  
+                </div>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#bluetoothtransport'
+                  class=" toggle-sibling">
+                  BluetoothTransport
+                  <span class='icon'>▸</span>
+                </a>
+                
+                <div class='toggle-target display-none'>
+                  
+                  <ul class='list-reset py1-ul pl1'>
+                    <li class='h5'><span>Static members</span></li>
+                    
+                      <li><a
+                        href='#bluetoothtransportobserveavailability'
+                        class='regular pre-open'>
+                        .observeAvailability
+                      </a></li>
+                    
+                      <li><a
+                        href='#bluetoothtransportlisten'
+                        class='regular pre-open'>
+                        .listen
+                      </a></li>
+                    
+                      <li><a
+                        href='#bluetoothtransportopen'
+                        class='regular pre-open'>
+                        .open
+                      </a></li>
+                    
+                    </ul>
+                  
+                  
+                  
+                  
+                </div>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#bluetoothtransport'
+                  class=" toggle-sibling">
+                  BluetoothTransport
+                  <span class='icon'>▸</span>
+                </a>
+                
+                <div class='toggle-target display-none'>
+                  
+                  <ul class='list-reset py1-ul pl1'>
+                    <li class='h5'><span>Static members</span></li>
+                    
+                      <li><a
+                        href='#bluetoothtransportobserveavailability'
+                        class='regular pre-open'>
+                        .observeAvailability
+                      </a></li>
+                    
+                      <li><a
+                        href='#bluetoothtransportlisten'
+                        class='regular pre-open'>
+                        .listen
+                      </a></li>
+                    
+                      <li><a
+                        href='#bluetoothtransportopen'
+                        class='regular pre-open'>
+                        .open
+                      </a></li>
+                    
+                    </ul>
+                  
+                  
+                  
+                  
+                </div>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#transportwebusb'
+                  class="">
+                  TransportWebUSB
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#subscription'
+                  class="">
+                  Subscription
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#device'
+                  class="">
+                  Device
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#descriptorevent'
+                  class="">
+                  DescriptorEvent
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#observer'
+                  class="">
+                  Observer
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#statuscodes'
+                  class="">
+                  StatusCodes
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#transporterror'
+                  class="">
+                  TransportError
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#transportstatuserror'
+                  class="">
+                  TransportStatusError
+                  
+                </a>
+                
+                </li>
+              
+            </ul>
+          </div>
+          <div class='mt1 h6 quiet'>
+            <a href='http://documentation.js.org/reading-documentation.html'>Need help reading this?</a>
+          </div>
+        </div>
+      </div>
+      <div id='split-right' class='relative overflow-auto height-viewport-100'>
+        
+          
+            <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='transport'>
+      Transport
+    </h3>
+    
+    
+      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/AndrewKishino/ledgerjs/blob/6511040045a032e1b8afb68e104662fb7c2f54b1/packages/hw-transport/src/Transport.js#L123-L375'>
+      <span>packages/hw-transport/src/Transport.js</span>
+      </a>
+    
+  </div>
+  
+
+  <p>Transport defines the generic interface to share between node/u2f impl
+A <strong>Descriptor</strong> is a parametric type that is up to be determined for the implementation.
+it can be for instance an ID, an file path, a URL,...</p>
+
+
+  <div class='pre p1 fill-light mt0'>new Transport()</div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Static Members</div>
+    <div class="clearfix">
+  
+    <div class='border-bottom' id='transportissupported'>
+      <div class="clearfix small pointer toggle-sibling">
+        <div class="py1 contain">
+            <a class='icon pin-right py1 dark-link caret-right'>▸</a>
+            <span class='code strong strong truncate'>isSupported</span>
+        </div>
+      </div>
+      <div class="clearfix display-none toggle-target">
+        <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    
+      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/AndrewKishino/ledgerjs/blob/6511040045a032e1b8afb68e104662fb7c2f54b1/packages/hw-transport/src/Transport.js#L130-L130'>
+      <span>packages/hw-transport/src/Transport.js</span>
+      </a>
+    
+  </div>
+  
+
+  <p>Statically check if a transport is supported on the user's platform/browser.</p>
+
+
+  <div class='pre p1 fill-light mt0'>isSupported</div>
+  
+    <p>
+      Type:
+      function (): <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Promise">Promise</a>&#x3C;<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a>>
+    </p>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+      </div>
+    </div>
+  
+    <div class='border-bottom' id='transportlist'>
+      <div class="clearfix small pointer toggle-sibling">
+        <div class="py1 contain">
+            <a class='icon pin-right py1 dark-link caret-right'>▸</a>
+            <span class='code strong strong truncate'>list</span>
+        </div>
+      </div>
+      <div class="clearfix display-none toggle-target">
+        <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    
+      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/AndrewKishino/ledgerjs/blob/6511040045a032e1b8afb68e104662fb7c2f54b1/packages/hw-transport/src/Transport.js#L138-L138'>
+      <span>packages/hw-transport/src/Transport.js</span>
+      </a>
+    
+  </div>
+  
+
+  <p>List once all available descriptors. For a better granularity, checkout <code>listen()</code>.</p>
+
+
+  <div class='pre p1 fill-light mt0'>list</div>
+  
+    <p>
+      Type:
+      function (): <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Promise">Promise</a>&#x3C;<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a>&#x3C;Descriptor>>
+    </p>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code>any</code>:
+        a promise of descriptors
+
+      
+    
+  
+
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Example</div>
+    
+      
+      <pre class='p1 overflow-auto round fill-light'>TransportFoo.list().then(<span class="hljs-function"><span class="hljs-params">descriptors</span> =&gt;</span> ...)</pre>
+    
+  
+
+  
+
+  
+
+  
+</section>
+
+      </div>
+    </div>
+  
+    <div class='border-bottom' id='transportlisten'>
+      <div class="clearfix small pointer toggle-sibling">
+        <div class="py1 contain">
+            <a class='icon pin-right py1 dark-link caret-right'>▸</a>
+            <span class='code strong strong truncate'>listen</span>
+        </div>
+      </div>
+      <div class="clearfix display-none toggle-target">
+        <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    
+      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/AndrewKishino/ledgerjs/blob/6511040045a032e1b8afb68e104662fb7c2f54b1/packages/hw-transport/src/Transport.js#L160-L162'>
+      <span>packages/hw-transport/src/Transport.js</span>
+      </a>
+    
+  </div>
+  
+
+  <p>Listen all device events for a given Transport. The method takes an Obverver of DescriptorEvent and returns a Subscription (according to Observable paradigm <a href="https://github.com/tc39/proposal-observable">https://github.com/tc39/proposal-observable</a> )
+a DescriptorEvent is a <code>{ descriptor, type }</code> object. type can be <code>"add"</code> or <code>"remove"</code> and descriptor is a value you can pass to <code>open(descriptor)</code>.
+each listen() call will first emit all potential device already connected and then will emit events can come over times,
+for instance if you plug a USB device after listen() or a bluetooth device become discoverable.</p>
+
+
+  <div class='pre p1 fill-light mt0'>listen</div>
+  
+    <p>
+      Type:
+      function (observer: <a href="#observer">Observer</a>&#x3C;<a href="#descriptorevent">DescriptorEvent</a>&#x3C;Descriptor>>): <a href="#subscription">Subscription</a>
+    </p>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>observer</span> <code class='quiet'>(any)</code>
+	    is an object with a next, error and complete function (compatible with observer pattern)
+
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code>any</code>:
+        a Subscription object on which you can 
+<code>.unsubscribe()</code>
+ to stop listening descriptors.
+
+      
+    
+  
+
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Example</div>
+    
+      
+      <pre class='p1 overflow-auto round fill-light'><span class="hljs-keyword">const</span> sub = TransportFoo.listen({
+<span class="hljs-attr">next</span>: <span class="hljs-function"><span class="hljs-params">e</span> =&gt;</span> {
+<span class="hljs-keyword">if</span> (e.type===<span class="hljs-string">"add"</span>) {
+sub.unsubscribe();
+<span class="hljs-keyword">const</span> transport = <span class="hljs-keyword">await</span> TransportFoo.open(e.descriptor);
+...
+}
+},
+<span class="hljs-attr">error</span>: <span class="hljs-function"><span class="hljs-params">error</span> =&gt;</span> {},
+<span class="hljs-attr">complete</span>: <span class="hljs-function"><span class="hljs-params">()</span> =&gt;</span> {}
+})</pre>
+    
+  
+
+  
+
+  
+
+  
+</section>
+
+      </div>
+    </div>
+  
+    <div class='border-bottom' id='transportopen'>
+      <div class="clearfix small pointer toggle-sibling">
+        <div class="py1 contain">
+            <a class='icon pin-right py1 dark-link caret-right'>▸</a>
+            <span class='code strong strong truncate'>open</span>
+        </div>
+      </div>
+      <div class="clearfix display-none toggle-target">
+        <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    
+      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/AndrewKishino/ledgerjs/blob/6511040045a032e1b8afb68e104662fb7c2f54b1/packages/hw-transport/src/Transport.js#L172-L175'>
+      <span>packages/hw-transport/src/Transport.js</span>
+      </a>
+    
+  </div>
+  
+
+  <p>attempt to create a Transport instance with potentially a descriptor.</p>
+
+
+  <div class='pre p1 fill-light mt0'>open</div>
+  
+    <p>
+      Type:
+      function (descriptor: Descriptor, timeout: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>): <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Promise">Promise</a>&#x3C;<a href="#transport">Transport</a>&#x3C;Descriptor>>
+    </p>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>descriptor</span> <code class='quiet'>(any)</code>
+	    : the descriptor to open the transport with.
+
+          </div>
+          
+        </div>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>timeout</span> <code class='quiet'>(any)</code>
+	    : an optional timeout
+
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code>any</code>:
+        a Promise of Transport instance
+
+      
+    
+  
+
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Example</div>
+    
+      
+      <pre class='p1 overflow-auto round fill-light'>TransportFoo.open(descriptor).then(<span class="hljs-function"><span class="hljs-params">transport</span> =&gt;</span> ...)</pre>
+    
+  
+
+  
+
+  
+
+  
+</section>
+
+      </div>
+    </div>
+  
+    <div class='border-bottom' id='transportcreate'>
+      <div class="clearfix small pointer toggle-sibling">
+        <div class="py1 contain">
+            <a class='icon pin-right py1 dark-link caret-right'>▸</a>
+            <span class='code strong strong truncate'>create(openTimeout, listenTimeout)</span>
+        </div>
+      </div>
+      <div class="clearfix display-none toggle-target">
+        <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    
+      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/AndrewKishino/ledgerjs/blob/6511040045a032e1b8afb68e104662fb7c2f54b1/packages/hw-transport/src/Transport.js#L285-L326'>
+      <span>packages/hw-transport/src/Transport.js</span>
+      </a>
+    
+  </div>
+  
+
+  <p>create() allows to open the first descriptor available or
+throw if there is none or if timeout is reached.
+This is a light helper, alternative to using listen() and open() (that you may need for any more advanced usecase)</p>
+
+
+  <div class='pre p1 fill-light mt0'>create(openTimeout: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>, listenTimeout: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>): <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Promise">Promise</a>&#x3C;<a href="#transport">Transport</a>&#x3C;Descriptor>></div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>openTimeout</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>
+            = <code>3000</code>)</code>
+	    
+          </div>
+          
+        </div>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>listenTimeout</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>)</code>
+	    
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Promise">Promise</a>&#x3C;<a href="#transport">Transport</a>&#x3C;Descriptor>></code>
+    
+  
+
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Example</div>
+    
+      
+      <pre class='p1 overflow-auto round fill-light'>TransportFoo.create().then(<span class="hljs-function"><span class="hljs-params">transport</span> =&gt;</span> ...)</pre>
+    
+  
+
+  
+
+  
+
+  
+</section>
+
+      </div>
+    </div>
+  
+</div>
+
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Instance Members</div>
+    <div class="clearfix">
+  
+    <div class='border-bottom' id='transportexchange'>
+      <div class="clearfix small pointer toggle-sibling">
+        <div class="py1 contain">
+            <a class='icon pin-right py1 dark-link caret-right'>▸</a>
+            <span class='code strong strong truncate'>exchange</span>
+        </div>
+      </div>
+      <div class="clearfix display-none toggle-target">
+        <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    
+      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/AndrewKishino/ledgerjs/blob/6511040045a032e1b8afb68e104662fb7c2f54b1/packages/hw-transport/src/Transport.js#L184-L184'>
+      <span>packages/hw-transport/src/Transport.js</span>
+      </a>
+    
+  </div>
+  
+
+  <p>low level api to communicate with the device
+This method is for implementations to implement but should not be directly called.
+Instead, the recommanded way is to use send() method</p>
+
+
+  <div class='pre p1 fill-light mt0'>exchange</div>
+  
+    <p>
+      Type:
+      function (apdu: <a href="https://nodejs.org/api/buffer.html">Buffer</a>): <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Promise">Promise</a>&#x3C;<a href="https://nodejs.org/api/buffer.html">Buffer</a>>
+    </p>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>apdu</span> <code class='quiet'>(any)</code>
+	    the data to send
+
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code>any</code>:
+        a Promise of response data
+
+      
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+      </div>
+    </div>
+  
+    <div class='border-bottom' id='transportsetscramblekey'>
+      <div class="clearfix small pointer toggle-sibling">
+        <div class="py1 contain">
+            <a class='icon pin-right py1 dark-link caret-right'>▸</a>
+            <span class='code strong strong truncate'>setScrambleKey</span>
+        </div>
+      </div>
+      <div class="clearfix display-none toggle-target">
+        <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    
+      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/AndrewKishino/ledgerjs/blob/6511040045a032e1b8afb68e104662fb7c2f54b1/packages/hw-transport/src/Transport.js#L191-L191'>
+      <span>packages/hw-transport/src/Transport.js</span>
+      </a>
+    
+  </div>
+  
+
+  <p>set the "scramble key" for the next exchanges with the device.
+Each App can have a different scramble key and they internally will set it at instanciation.</p>
+
+
+  <div class='pre p1 fill-light mt0'>setScrambleKey</div>
+  
+    <p>
+      Type:
+      function (key: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>): void
+    </p>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>key</span> <code class='quiet'>(any)</code>
+	    the scramble key
+
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+      </div>
+    </div>
+  
+    <div class='border-bottom' id='transportclose'>
+      <div class="clearfix small pointer toggle-sibling">
+        <div class="py1 contain">
+            <a class='icon pin-right py1 dark-link caret-right'>▸</a>
+            <span class='code strong strong truncate'>close</span>
+        </div>
+      </div>
+      <div class="clearfix display-none toggle-target">
+        <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    
+      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/AndrewKishino/ledgerjs/blob/6511040045a032e1b8afb68e104662fb7c2f54b1/packages/hw-transport/src/Transport.js#L197-L197'>
+      <span>packages/hw-transport/src/Transport.js</span>
+      </a>
+    
+  </div>
+  
+
+  <p>close the exchange with the device.</p>
+
+
+  <div class='pre p1 fill-light mt0'>close</div>
+  
+    <p>
+      Type:
+      function (): <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Promise">Promise</a>&#x3C;void>
+    </p>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code>any</code>:
+        a Promise that ends when the transport is closed.
+
+      
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+      </div>
+    </div>
+  
+    <div class='border-bottom' id='transporton'>
+      <div class="clearfix small pointer toggle-sibling">
+        <div class="py1 contain">
+            <a class='icon pin-right py1 dark-link caret-right'>▸</a>
+            <span class='code strong strong truncate'>on(eventName, cb)</span>
+        </div>
+      </div>
+      <div class="clearfix display-none toggle-target">
+        <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    
+      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/AndrewKishino/ledgerjs/blob/6511040045a032e1b8afb68e104662fb7c2f54b1/packages/hw-transport/src/Transport.js#L206-L208'>
+      <span>packages/hw-transport/src/Transport.js</span>
+      </a>
+    
+  </div>
+  
+
+  <p>Listen to an event on an instance of transport.
+Transport implementation can have specific events. Here is the common events:</p>
+<ul>
+<li><code>"disconnect"</code> : triggered if Transport is disconnected</li>
+</ul>
+
+
+  <div class='pre p1 fill-light mt0'>on(eventName: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>, cb: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/function">Function</a>)</div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>eventName</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)</code>
+	    
+          </div>
+          
+        </div>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>cb</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/function">Function</a>)</code>
+	    
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+      </div>
+    </div>
+  
+    <div class='border-bottom' id='transportoff'>
+      <div class="clearfix small pointer toggle-sibling">
+        <div class="py1 contain">
+            <a class='icon pin-right py1 dark-link caret-right'>▸</a>
+            <span class='code strong strong truncate'>off(eventName, cb)</span>
+        </div>
+      </div>
+      <div class="clearfix display-none toggle-target">
+        <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    
+      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/AndrewKishino/ledgerjs/blob/6511040045a032e1b8afb68e104662fb7c2f54b1/packages/hw-transport/src/Transport.js#L213-L215'>
+      <span>packages/hw-transport/src/Transport.js</span>
+      </a>
+    
+  </div>
+  
+
+  <p>Stop listening to an event on an instance of transport.</p>
+
+
+  <div class='pre p1 fill-light mt0'>off(eventName: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>, cb: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/function">Function</a>)</div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>eventName</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)</code>
+	    
+          </div>
+          
+        </div>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>cb</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/function">Function</a>)</code>
+	    
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+      </div>
+    </div>
+  
+    <div class='border-bottom' id='transportsetdebugmode'>
+      <div class="clearfix small pointer toggle-sibling">
+        <div class="py1 contain">
+            <a class='icon pin-right py1 dark-link caret-right'>▸</a>
+            <span class='code strong strong truncate'>setDebugMode(debug)</span>
+        </div>
+      </div>
+      <div class="clearfix display-none toggle-target">
+        <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    
+      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/AndrewKishino/ledgerjs/blob/6511040045a032e1b8afb68e104662fb7c2f54b1/packages/hw-transport/src/Transport.js#L224-L231'>
+      <span>packages/hw-transport/src/Transport.js</span>
+      </a>
+    
+  </div>
+  
+
+  <p>Enable or not logs of the binary exchange</p>
+
+
+  <div class='pre p1 fill-light mt0'>setDebugMode(debug: (<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a> | function (log: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>): void))</div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>debug</span> <code class='quiet'>((<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a> | function (log: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>): void))</code>
+	    
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+      </div>
+    </div>
+  
+    <div class='border-bottom' id='transportsetexchangetimeout'>
+      <div class="clearfix small pointer toggle-sibling">
+        <div class="py1 contain">
+            <a class='icon pin-right py1 dark-link caret-right'>▸</a>
+            <span class='code strong strong truncate'>setExchangeTimeout(exchangeTimeout)</span>
+        </div>
+      </div>
+      <div class="clearfix display-none toggle-target">
+        <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    
+      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/AndrewKishino/ledgerjs/blob/6511040045a032e1b8afb68e104662fb7c2f54b1/packages/hw-transport/src/Transport.js#L236-L238'>
+      <span>packages/hw-transport/src/Transport.js</span>
+      </a>
+    
+  </div>
+  
+
+  <p>Set a timeout (in milliseconds) for the exchange call. Only some transport might implement it. (e.g. U2F)</p>
+
+
+  <div class='pre p1 fill-light mt0'>setExchangeTimeout(exchangeTimeout: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>)</div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>exchangeTimeout</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>)</code>
+	    
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+      </div>
+    </div>
+  
+    <div class='border-bottom' id='transportsend'>
+      <div class="clearfix small pointer toggle-sibling">
+        <div class="py1 contain">
+            <a class='icon pin-right py1 dark-link caret-right'>▸</a>
+            <span class='code strong strong truncate'>send</span>
+        </div>
+      </div>
+      <div class="clearfix display-none toggle-target">
+        <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    
+      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/AndrewKishino/ledgerjs/blob/6511040045a032e1b8afb68e104662fb7c2f54b1/packages/hw-transport/src/Transport.js#L250-L276'>
+      <span>packages/hw-transport/src/Transport.js</span>
+      </a>
+    
+  </div>
+  
+
+  <p>wrapper on top of exchange to simplify work of the implementation.</p>
+
+
+  <div class='pre p1 fill-light mt0'>send</div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>cla</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>)</code>
+	    
+          </div>
+          
+        </div>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>ins</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>)</code>
+	    
+          </div>
+          
+        </div>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>p1</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>)</code>
+	    
+          </div>
+          
+        </div>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>p2</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>)</code>
+	    
+          </div>
+          
+        </div>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>data</span> <code class='quiet'>(<a href="https://nodejs.org/api/buffer.html">Buffer</a>)</code>
+	    
+          </div>
+          
+        </div>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>statusList</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a>&#x3C;<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>>)</code>
+	    is a list of accepted status code (shorts). 
+[
+0x9000
+]
+ by default
+
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Promise">Promise</a>&#x3C;<a href="https://nodejs.org/api/buffer.html">Buffer</a>></code>:
+        a Promise of response buffer
+
+      
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+      </div>
+    </div>
+  
+</div>
+
+  
+
+  
+</section>
+
+          
+        
+          
+            <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='tezos'>
+      Tezos
+    </h3>
+    
+    
+      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/AndrewKishino/ledgerjs/blob/6511040045a032e1b8afb68e104662fb7c2f54b1/packages/hw-app-xtz/src/Tezos.js#L30-L169'>
+      <span>packages/hw-app-xtz/src/Tezos.js</span>
+      </a>
+    
+  </div>
+  
+
+  <p>Tezos API</p>
+
+
+  <div class='pre p1 fill-light mt0'>new Tezos(transport: <a href="#transport">Transport</a>&#x3C;any>)</div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>transport</span> <code class='quiet'>(<a href="#transport">Transport</a>&#x3C;any>)</code>
+	    
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Example</div>
+    
+      
+      <pre class='p1 overflow-auto round fill-light'><span class="hljs-keyword">import</span> Tezos <span class="hljs-keyword">from</span> <span class="hljs-string">"@ledgerhq/hw-app-xtz"</span>;
+<span class="hljs-keyword">const</span> tez = <span class="hljs-keyword">new</span> Tezos(transport)</pre>
+    
+  
+
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Instance Members</div>
+    <div class="clearfix">
+  
+    <div class='border-bottom' id='tezosgetaddress'>
+      <div class="clearfix small pointer toggle-sibling">
+        <div class="py1 contain">
+            <a class='icon pin-right py1 dark-link caret-right'>▸</a>
+            <span class='code strong strong truncate'>getAddress(path, boolDisplay, curve, apdu)</span>
+        </div>
+      </div>
+      <div class="clearfix display-none toggle-target">
+        <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    
+      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/AndrewKishino/ledgerjs/blob/6511040045a032e1b8afb68e104662fb7c2f54b1/packages/hw-app-xtz/src/Tezos.js#L58-L96'>
+      <span>packages/hw-app-xtz/src/Tezos.js</span>
+      </a>
+    
+  </div>
+  
+
+  <p>get Tezos public key and address (key hash) for a given BIP 32 path.</p>
+
+
+  <div class='pre p1 fill-light mt0'>getAddress(path: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>, boolDisplay: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a>, curve: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>, apdu: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>): <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Promise">Promise</a>&#x3C;{publicKey: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>, address: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>}></div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>path</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)</code>
+	    a path in BIP 32 format, must begin with 44'/1729'
+
+          </div>
+          
+        </div>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>boolDisplay</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a>)</code>
+	    
+          </div>
+          
+        </div>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>curve</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>)</code>
+	    
+          </div>
+          
+        </div>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>apdu</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>)</code>
+	    
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Promise">Promise</a>&#x3C;{publicKey: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>, address: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>}></code>:
+        an object with a publicKey
+
+      
+    
+  
+
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Example</div>
+    
+      
+      <pre class='p1 overflow-auto round fill-light'>tez.getAddress(<span class="hljs-string">"44'/1729'/0'/0'"</span>).then(<span class="hljs-function"><span class="hljs-params">o</span> =&gt;</span> o.address)</pre>
+    
+  
+
+  
+
+  
+
+  
+</section>
+
+      </div>
+    </div>
+  
+</div>
+
+  
+
+  
+</section>
+
+          
+        
+          
+            <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='httptransport'>
+      HttpTransport
+    </h3>
+    
+    
+      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/AndrewKishino/ledgerjs/blob/6511040045a032e1b8afb68e104662fb7c2f54b1/packages/hw-transport-http/src/HttpTransport.js#L8-L69'>
+      <span>packages/hw-transport-http/src/HttpTransport.js</span>
+      </a>
+    
+  </div>
+  
+
+  <p>HTTP transport implementation</p>
+
+
+  <div class='pre p1 fill-light mt0'>new HttpTransport(url: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)</div>
+  
+  
+    <p>
+      Extends
+      
+        <a href="#transport">Transport</a>
+      
+    </p>
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>url</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)</code>
+	    
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+            <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='websockettransport'>
+      WebSocketTransport
+    </h3>
+    
+    
+      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/AndrewKishino/ledgerjs/blob/6511040045a032e1b8afb68e104662fb7c2f54b1/packages/hw-transport-http/src/WebSocketTransport.js#L9-L126'>
+      <span>packages/hw-transport-http/src/WebSocketTransport.js</span>
+      </a>
+    
+  </div>
+  
+
+  <p>WebSocket transport implementation</p>
+
+
+  <div class='pre p1 fill-light mt0'>new WebSocketTransport(hook: any)</div>
+  
+  
+    <p>
+      Extends
+      
+        <a href="#transport">Transport</a>
+      
+    </p>
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>hook</span> <code class='quiet'>(any)</code>
+	    
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+            <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='transportnodehid'>
+      TransportNodeHid
+    </h3>
+    
+    
+      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/AndrewKishino/ledgerjs/blob/6511040045a032e1b8afb68e104662fb7c2f54b1/packages/hw-transport-node-hid/src/TransportNodeHid.js#L40-L423'>
+      <span>packages/hw-transport-node-hid/src/TransportNodeHid.js</span>
+      </a>
+    
+  </div>
+  
+
+  <p>node-hid Transport implementation</p>
+
+
+  <div class='pre p1 fill-light mt0'>new TransportNodeHid(device: HID.HID, ledgerTransport: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a>, timeout: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>)</div>
+  
+  
+    <p>
+      Extends
+      
+        <a href="#transport">Transport</a>
+      
+    </p>
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>device</span> <code class='quiet'>(HID.HID)</code>
+	    
+          </div>
+          
+        </div>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>ledgerTransport</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a>
+            = <code>true</code>)</code>
+	    
+          </div>
+          
+        </div>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>timeout</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>
+            = <code>0</code>)</code>
+	    
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Example</div>
+    
+      
+      <pre class='p1 overflow-auto round fill-light'><span class="hljs-keyword">import</span> TransportNodeHid <span class="hljs-keyword">from</span> <span class="hljs-string">"@ledgerhq/hw-transport-node-u2f"</span>;
+...
+TransportNodeHid.create().then(<span class="hljs-function"><span class="hljs-params">transport</span> =&gt;</span> ...)</pre>
+    
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Static Members</div>
+    <div class="clearfix">
+  
+    <div class='border-bottom' id='transportnodehidlisten'>
+      <div class="clearfix small pointer toggle-sibling">
+        <div class="py1 contain">
+            <a class='icon pin-right py1 dark-link caret-right'>▸</a>
+            <span class='code strong strong truncate'>listen</span>
+        </div>
+      </div>
+      <div class="clearfix display-none toggle-target">
+        <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    
+      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/AndrewKishino/ledgerjs/blob/6511040045a032e1b8afb68e104662fb7c2f54b1/packages/hw-transport-node-hid/src/TransportNodeHid.js#L83-L119'>
+      <span>packages/hw-transport-node-hid/src/TransportNodeHid.js</span>
+      </a>
+    
+  </div>
+  
+
+  
+
+  <div class='pre p1 fill-light mt0'>listen</div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>observer</span> <code class='quiet'>(<a href="#observer">Observer</a>&#x3C;<a href="#descriptorevent">DescriptorEvent</a>&#x3C;<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>>>)</code>
+	    
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code><a href="#subscription">Subscription</a></code>
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+      </div>
+    </div>
+  
+    <div class='border-bottom' id='transportnodehidopen'>
+      <div class="clearfix small pointer toggle-sibling">
+        <div class="py1 contain">
+            <a class='icon pin-right py1 dark-link caret-right'>▸</a>
+            <span class='code strong strong truncate'>open(path)</span>
+        </div>
+      </div>
+      <div class="clearfix display-none toggle-target">
+        <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    
+      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/AndrewKishino/ledgerjs/blob/6511040045a032e1b8afb68e104662fb7c2f54b1/packages/hw-transport-node-hid/src/TransportNodeHid.js#L124-L131'>
+      <span>packages/hw-transport-node-hid/src/TransportNodeHid.js</span>
+      </a>
+    
+  </div>
+  
+
+  <p>if path="" is not provided, the library will take the first device</p>
+
+
+  <div class='pre p1 fill-light mt0'>open(path: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)</div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>path</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)</code>
+	    
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+      </div>
+    </div>
+  
+</div>
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+            <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='transportu2f'>
+      TransportU2F
+    </h3>
+    
+    
+      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/AndrewKishino/ledgerjs/blob/6511040045a032e1b8afb68e104662fb7c2f54b1/packages/hw-transport-u2f/src/TransportU2F.js#L92-L209'>
+      <span>packages/hw-transport-u2f/src/TransportU2F.js</span>
+      </a>
+    
+  </div>
+  
+
+  <p>U2F web Transport implementation</p>
+
+
+  <div class='pre p1 fill-light mt0'>new TransportU2F()</div>
+  
+  
+    <p>
+      Extends
+      
+        <a href="#transport">Transport</a>
+      
+    </p>
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Example</div>
+    
+      
+      <pre class='p1 overflow-auto round fill-light'><span class="hljs-keyword">import</span> TransportU2F <span class="hljs-keyword">from</span> <span class="hljs-string">"@ledgerhq/hw-transport-u2f"</span>;
+...
+TransportU2F.create().then(<span class="hljs-function"><span class="hljs-params">transport</span> =&gt;</span> ...)</pre>
+    
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Static Members</div>
+    <div class="clearfix">
+  
+    <div class='border-bottom' id='transportu2fopen'>
+      <div class="clearfix small pointer toggle-sibling">
+        <div class="py1 contain">
+            <a class='icon pin-right py1 dark-link caret-right'>▸</a>
+            <span class='code strong strong truncate'>open(_, _openTimeout)</span>
+        </div>
+      </div>
+      <div class="clearfix display-none toggle-target">
+        <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    
+      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/AndrewKishino/ledgerjs/blob/6511040045a032e1b8afb68e104662fb7c2f54b1/packages/hw-transport-u2f/src/TransportU2F.js#L131-L163'>
+      <span>packages/hw-transport-u2f/src/TransportU2F.js</span>
+      </a>
+    
+  </div>
+  
+
+  <p>static function to create a new Transport from a connected Ledger device discoverable via U2F (browser support)</p>
+
+
+  <div class='pre p1 fill-light mt0'>open(_: any, _openTimeout: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>): <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Promise">Promise</a>&#x3C;<a href="#transportu2f">TransportU2F</a>></div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>_</span> <code class='quiet'>(any)</code>
+	    
+          </div>
+          
+        </div>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>_openTimeout</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>
+            = <code>5000</code>)</code>
+	    
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Promise">Promise</a>&#x3C;<a href="#transportu2f">TransportU2F</a>></code>
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+      </div>
+    </div>
+  
+</div>
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+            <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='bluetoothtransport'>
+      BluetoothTransport
+    </h3>
+    
+    
+      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/AndrewKishino/ledgerjs/blob/6511040045a032e1b8afb68e104662fb7c2f54b1/packages/hw-transport-web-ble/src/TransportWebBLE.js#L57-L279'>
+      <span>packages/hw-transport-web-ble/src/TransportWebBLE.js</span>
+      </a>
+    
+  </div>
+  
+
+  <p>react-native bluetooth BLE implementation</p>
+
+
+  <div class='pre p1 fill-light mt0'>new BluetoothTransport(device: <a href="#device">Device</a>, writeCharacteristic: Characteristic, notifyObservable: Observable&#x3C;any>)</div>
+  
+  
+    <p>
+      Extends
+      
+        <a href="#transport">Transport</a>
+      
+    </p>
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>device</span> <code class='quiet'>(<a href="#device">Device</a>)</code>
+	    
+          </div>
+          
+        </div>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>writeCharacteristic</span> <code class='quiet'>(Characteristic)</code>
+	    
+          </div>
+          
+        </div>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>notifyObservable</span> <code class='quiet'>(Observable&#x3C;any>)</code>
+	    
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Example</div>
+    
+      
+      <pre class='p1 overflow-auto round fill-light'><span class="hljs-keyword">import</span> BluetoothTransport <span class="hljs-keyword">from</span> <span class="hljs-string">"@ledgerhq/hw-transport-web-ble"</span>;</pre>
+    
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Static Members</div>
+    <div class="clearfix">
+  
+    <div class='border-bottom' id='bluetoothtransportobserveavailability'>
+      <div class="clearfix small pointer toggle-sibling">
+        <div class="py1 contain">
+            <a class='icon pin-right py1 dark-link caret-right'>▸</a>
+            <span class='code strong strong truncate'>observeAvailability</span>
+        </div>
+      </div>
+      <div class="clearfix display-none toggle-target">
+        <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    
+      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/AndrewKishino/ledgerjs/blob/6511040045a032e1b8afb68e104662fb7c2f54b1/packages/hw-transport-web-ble/src/TransportWebBLE.js#L68-L69'>
+      <span>packages/hw-transport-web-ble/src/TransportWebBLE.js</span>
+      </a>
+    
+  </div>
+  
+
+  <p>TODO could add this concept in all transports
+observe event with { available: bool, type: string } // available is generic, type is specific
+an event is emit once and then each time it changes</p>
+
+
+  <div class='pre p1 fill-light mt0'>observeAvailability</div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>observer</span> <code class='quiet'>(any)</code>
+	    
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+      </div>
+    </div>
+  
+    <div class='border-bottom' id='bluetoothtransportlisten'>
+      <div class="clearfix small pointer toggle-sibling">
+        <div class="py1 contain">
+            <a class='icon pin-right py1 dark-link caret-right'>▸</a>
+            <span class='code strong strong truncate'>listen(observer)</span>
+        </div>
+      </div>
+      <div class="clearfix display-none toggle-target">
+        <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    
+      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/AndrewKishino/ledgerjs/blob/6511040045a032e1b8afb68e104662fb7c2f54b1/packages/react-native-hw-transport-ble/src/index.js#L126-L165'>
+      <span>packages/react-native-hw-transport-ble/src/index.js</span>
+      </a>
+    
+  </div>
+  
+
+  
+
+  <div class='pre p1 fill-light mt0'>listen(observer: any)</div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>observer</span> <code class='quiet'>(any)</code>
+	    
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+      </div>
+    </div>
+  
+    <div class='border-bottom' id='bluetoothtransportopen'>
+      <div class="clearfix small pointer toggle-sibling">
+        <div class="py1 contain">
+            <a class='icon pin-right py1 dark-link caret-right'>▸</a>
+            <span class='code strong strong truncate'>open(device)</span>
+        </div>
+      </div>
+      <div class="clearfix display-none toggle-target">
+        <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    
+      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/AndrewKishino/ledgerjs/blob/6511040045a032e1b8afb68e104662fb7c2f54b1/packages/react-native-hw-transport-ble/src/index.js#L169-L215'>
+      <span>packages/react-native-hw-transport-ble/src/index.js</span>
+      </a>
+    
+  </div>
+  
+
+  
+
+  <div class='pre p1 fill-light mt0'>open(device: <a href="#device">Device</a>)</div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>device</span> <code class='quiet'>(<a href="#device">Device</a>)</code>
+	    
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+      </div>
+    </div>
+  
+</div>
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+            <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='bluetoothtransport'>
+      BluetoothTransport
+    </h3>
+    
+    
+      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/AndrewKishino/ledgerjs/blob/6511040045a032e1b8afb68e104662fb7c2f54b1/packages/react-native-hw-transport-ble/src/index.js#L118-L265'>
+      <span>packages/react-native-hw-transport-ble/src/index.js</span>
+      </a>
+    
+  </div>
+  
+
+  <p>react-native bluetooth BLE implementation</p>
+
+
+  <div class='pre p1 fill-light mt0'>new BluetoothTransport(device: <a href="#device">Device</a>, writeCharacteristic: Characteristic, notifyCharacteristic: Characteristic)</div>
+  
+  
+    <p>
+      Extends
+      
+        <a href="#transport">Transport</a>
+      
+    </p>
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>device</span> <code class='quiet'>(<a href="#device">Device</a>)</code>
+	    
+          </div>
+          
+        </div>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>writeCharacteristic</span> <code class='quiet'>(Characteristic)</code>
+	    
+          </div>
+          
+        </div>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>notifyCharacteristic</span> <code class='quiet'>(Characteristic)</code>
+	    
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Example</div>
+    
+      
+      <pre class='p1 overflow-auto round fill-light'><span class="hljs-keyword">import</span> BluetoothTransport <span class="hljs-keyword">from</span> <span class="hljs-string">"@ledgerhq/react-native-hw-transport-ble"</span>;</pre>
+    
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Static Members</div>
+    <div class="clearfix">
+  
+    <div class='border-bottom' id='bluetoothtransportobserveavailability'>
+      <div class="clearfix small pointer toggle-sibling">
+        <div class="py1 contain">
+            <a class='icon pin-right py1 dark-link caret-right'>▸</a>
+            <span class='code strong strong truncate'>observeAvailability</span>
+        </div>
+      </div>
+      <div class="clearfix display-none toggle-target">
+        <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    
+      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/AndrewKishino/ledgerjs/blob/6511040045a032e1b8afb68e104662fb7c2f54b1/packages/hw-transport-web-ble/src/TransportWebBLE.js#L68-L69'>
+      <span>packages/hw-transport-web-ble/src/TransportWebBLE.js</span>
+      </a>
+    
+  </div>
+  
+
+  <p>TODO could add this concept in all transports
+observe event with { available: bool, type: string } // available is generic, type is specific
+an event is emit once and then each time it changes</p>
+
+
+  <div class='pre p1 fill-light mt0'>observeAvailability</div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>observer</span> <code class='quiet'>(any)</code>
+	    
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+      </div>
+    </div>
+  
+    <div class='border-bottom' id='bluetoothtransportlisten'>
+      <div class="clearfix small pointer toggle-sibling">
+        <div class="py1 contain">
+            <a class='icon pin-right py1 dark-link caret-right'>▸</a>
+            <span class='code strong strong truncate'>listen(observer)</span>
+        </div>
+      </div>
+      <div class="clearfix display-none toggle-target">
+        <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    
+      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/AndrewKishino/ledgerjs/blob/6511040045a032e1b8afb68e104662fb7c2f54b1/packages/react-native-hw-transport-ble/src/index.js#L126-L165'>
+      <span>packages/react-native-hw-transport-ble/src/index.js</span>
+      </a>
+    
+  </div>
+  
+
+  
+
+  <div class='pre p1 fill-light mt0'>listen(observer: any)</div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>observer</span> <code class='quiet'>(any)</code>
+	    
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+      </div>
+    </div>
+  
+    <div class='border-bottom' id='bluetoothtransportopen'>
+      <div class="clearfix small pointer toggle-sibling">
+        <div class="py1 contain">
+            <a class='icon pin-right py1 dark-link caret-right'>▸</a>
+            <span class='code strong strong truncate'>open(device)</span>
+        </div>
+      </div>
+      <div class="clearfix display-none toggle-target">
+        <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    
+      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/AndrewKishino/ledgerjs/blob/6511040045a032e1b8afb68e104662fb7c2f54b1/packages/react-native-hw-transport-ble/src/index.js#L169-L215'>
+      <span>packages/react-native-hw-transport-ble/src/index.js</span>
+      </a>
+    
+  </div>
+  
+
+  
+
+  <div class='pre p1 fill-light mt0'>open(device: <a href="#device">Device</a>)</div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>device</span> <code class='quiet'>(<a href="#device">Device</a>)</code>
+	    
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+      </div>
+    </div>
+  
+</div>
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+            <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='transportwebusb'>
+      TransportWebUSB
+    </h3>
+    
+    
+      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/AndrewKishino/ledgerjs/blob/6511040045a032e1b8afb68e104662fb7c2f54b1/packages/hw-transport-webusb/src/TransportWebUSB.js#L22-L119'>
+      <span>packages/hw-transport-webusb/src/TransportWebUSB.js</span>
+      </a>
+    
+  </div>
+  
+
+  <p>WebUSB Transport implementation</p>
+
+
+  <div class='pre p1 fill-light mt0'>new TransportWebUSB(device: USBDevice)</div>
+  
+  
+    <p>
+      Extends
+      
+        <a href="#transport">Transport</a>
+      
+    </p>
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>device</span> <code class='quiet'>(USBDevice)</code>
+	    
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Example</div>
+    
+      
+      <pre class='p1 overflow-auto round fill-light'><span class="hljs-keyword">import</span> TransportWebUSB <span class="hljs-keyword">from</span> <span class="hljs-string">"@ledgerhq/hw-transport-webusb"</span>;
+...
+TransportWebUSB.create().then(<span class="hljs-function"><span class="hljs-params">transport</span> =&gt;</span> ...)</pre>
+    
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+            <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='subscription'>
+      Subscription
+    </h3>
+    
+    
+      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/AndrewKishino/ledgerjs/blob/6511040045a032e1b8afb68e104662fb7c2f54b1/packages/hw-transport/src/Transport.js#L5-L6'>
+      <span>packages/hw-transport/src/Transport.js</span>
+      </a>
+    
+  </div>
+  
+
+  
+
+  <div class='pre p1 fill-light mt0'>Subscription</div>
+  
+    <p>
+      Type:
+      {unsubscribe: function (): void}
+    </p>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Properties</div>
+    <div>
+      
+        <div class='space-bottom0'>
+          <span class='code bold'>unsubscribe</span> <code class='quiet'>(function (): void)</code>
+          
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+            <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='device'>
+      Device
+    </h3>
+    
+    
+      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/AndrewKishino/ledgerjs/blob/6511040045a032e1b8afb68e104662fb7c2f54b1/packages/hw-transport/src/Transport.js#L9-L10'>
+      <span>packages/hw-transport/src/Transport.js</span>
+      </a>
+    
+  </div>
+  
+
+  
+
+  <div class='pre p1 fill-light mt0'>Device</div>
+  
+    <p>
+      Type:
+      <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>
+    </p>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+            <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='descriptorevent'>
+      DescriptorEvent
+    </h3>
+    
+    
+      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/AndrewKishino/ledgerjs/blob/6511040045a032e1b8afb68e104662fb7c2f54b1/packages/hw-transport/src/Transport.js#L13-L14'>
+      <span>packages/hw-transport/src/Transport.js</span>
+      </a>
+    
+  </div>
+  
+
+  
+
+  <div class='pre p1 fill-light mt0'>DescriptorEvent</div>
+  
+    <p>
+      Type:
+      {type: (<code>"add"</code> | <code>"remove"</code>), descriptor: Descriptor, device: <a href="#device">Device</a>?}
+    </p>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Properties</div>
+    <div>
+      
+        <div class='space-bottom0'>
+          <span class='code bold'>type</span> <code class='quiet'>((<code>"add"</code> | <code>"remove"</code>))</code>
+          
+          
+        </div>
+      
+        <div class='space-bottom0'>
+          <span class='code bold'>descriptor</span> <code class='quiet'>(Descriptor)</code>
+          
+          
+        </div>
+      
+        <div class='space-bottom0'>
+          <span class='code bold'>device</span> <code class='quiet'>(<a href="#device">Device</a>?)</code>
+          
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+            <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='observer'>
+      Observer
+    </h3>
+    
+    
+      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/AndrewKishino/ledgerjs/blob/6511040045a032e1b8afb68e104662fb7c2f54b1/packages/hw-transport/src/Transport.js#L20-L21'>
+      <span>packages/hw-transport/src/Transport.js</span>
+      </a>
+    
+  </div>
+  
+
+  
+
+  <div class='pre p1 fill-light mt0'>Observer</div>
+  
+    <p>
+      Type:
+      $ReadOnly&#x3C;{next: function (event: Ev): any, error: function (e: any): any, complete: function (): any}>
+    </p>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+            <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='statuscodes'>
+      StatusCodes
+    </h3>
+    
+    
+      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/AndrewKishino/ledgerjs/blob/6511040045a032e1b8afb68e104662fb7c2f54b1/packages/hw-transport/src/Transport.js#L34-L65'>
+      <span>packages/hw-transport/src/Transport.js</span>
+      </a>
+    
+  </div>
+  
+
+  <p>all possible status codes.</p>
+
+
+  <div class='pre p1 fill-light mt0'>StatusCodes</div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Example</div>
+    
+      
+      <pre class='p1 overflow-auto round fill-light'><span class="hljs-keyword">import</span> { StatusCodes } <span class="hljs-keyword">from</span> <span class="hljs-string">"@ledgerhq/hw-transport"</span>;</pre>
+    
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+            <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='transporterror'>
+      TransportError
+    </h3>
+    
+    
+      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/AndrewKishino/ledgerjs/blob/6511040045a032e1b8afb68e104662fb7c2f54b1/packages/hw-transport/src/Transport.js#L90-L95'>
+      <span>packages/hw-transport/src/Transport.js</span>
+      </a>
+    
+  </div>
+  
+
+  <p>TransportError is used for any generic transport errors.
+e.g. Error thrown when data received by exchanges are incorrect or if exchanged failed to communicate with the device for various reason.</p>
+
+
+  <div class='pre p1 fill-light mt0'>new TransportError(message: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>, id: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)</div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>message</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)</code>
+	    
+          </div>
+          
+        </div>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>id</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)</code>
+	    
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+            <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='transportstatuserror'>
+      TransportStatusError
+    </h3>
+    
+    
+      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/AndrewKishino/ledgerjs/blob/6511040045a032e1b8afb68e104662fb7c2f54b1/packages/hw-transport/src/Transport.js#L103-L114'>
+      <span>packages/hw-transport/src/Transport.js</span>
+      </a>
+    
+  </div>
+  
+
+  <p>Error thrown when a device returned a non success status.
+the error.statusCode is one of the <code>StatusCodes</code> exported by this library.</p>
+
+
+  <div class='pre p1 fill-light mt0'>new TransportStatusError(statusCode: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>)</div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>statusCode</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>)</code>
+	    
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+      </div>
+    </div>
+  <script src='assets/anchor.js'></script>
+  <script src='assets/split.js'></script>
+  <script src='assets/site.js'></script>
+</body>
+</html>
